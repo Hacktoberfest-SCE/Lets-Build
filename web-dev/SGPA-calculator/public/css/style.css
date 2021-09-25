@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+.form-group {
+    width: 35%;
+	height: 41%;
+    /* max-width: 330px; */
+    padding: 15px;
+    position: absolute;
+    outline: none;
+    
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    font-family: 'Merienda One', cursive;
+    font-size: 25px;
+    color: rgb(241, 237, 245);
+	margin: auto;
+    background: rgb(187,75,238);
+  background: linear-gradient(-240deg,rgb(95, 3, 107) 10%, rgb(9, 1, 14) 90%, rgba(141, 4, 168, 0.89) 30%);
+    border-radius: 22px;
+  }
+ 
+  .form-control{
+
+  }
+  
+  .form-group2{
+   
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    width: 35%;
+	height: 54%;
+    /* max-width: 330px; */
+    padding: 15px;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  color: rgb(241, 237, 245);
+	margin: auto;
+  background: rgb(187,75,238);
+  background: linear-gradient(-240deg,rgb(102, 8, 71) 10%, rgb(21, 1, 41) 90%, rgba(168, 4, 95, 0.89) 30%);
+    border-radius: 22px;
+  }
+  input{
+    text-align: center;
+    outline: none;
+    height: 20px;
+    
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(178, 120, 231, 0.911);
+    color: rgba(162, 141, 241, 0.911);
+    font-size: 13pt;
+  }
+  @media only screen and (max-width: 600px) {
+    .form-group {
+        width: 79%;
+        height: 54%
+    }
+    .form-group2{
+        width: 79%;
+        height: 102%
+    }
+    input{
+      text-align: center;
+      outline: none;
+      height: 16px;
+      
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid rgba(178, 120, 231, 0.911);
+      color: rgba(162, 141, 241, 0.911);
+      font-size: 10pt;
+    }
+  }
