@@ -1,0 +1,139 @@
+body {
+  background-image: url(k8s.jpg);
+  opacity:0.9;
+}
+
+h1 {
+  color: white;
+  margin-left: 20px;
+}
+ h2 {
+  font-size: 80px;
+
+    color: #000000;
+    font-weight:bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    box-shadow: 4px 2px 5px 1px #991cff;
+    background-color:rgb(85, 255, 141);
+    display: inline-block;
+    font-size: 30px;
+    margin:4px 4px;
+    transition-duration:0.4s;
+    cursor:pointer;
+}
+ 
+      #div1 {
+
+  background-color: deepskyblue;
+  height: 200px;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 80px;
+  text-align:center;
+  overflow:auto;
+}
+
+     #div2 {
+  background-color: deepskyblue;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 10px;
+  top: 20%;
+  text-align:center;
+  overflow:auto;
+}
+
+
+     #div5 {
+  background-color: deepskyblue;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 10px;
+  top: 55%;
+  text-align:center;
+  overflow:auto;
+}
+
+
+     #div3 {
+  height: 50px;
+  width: 600px;
+  background-color: deepskyblue;
+  text-align:center;
+  position: absolute;
+  top: 30%;
+  left: 500px;
+
+}
+
+#box{
+    
+    width: 300px;
+}
+#box1{
+    width: 300px;
+}
+   #div4 {
+  background-color: deepskyblue;
+  height: 50px;
+  width: 600px;
+  position: absolute;
+  left: 500px;
+  top: 40%;
+  text-align:center;
+  overflow:auto;
+}
+.pod-create{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+.deploy-create{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.expose-deploy{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 65px;
+}
+.deploy-scale{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+.delete-pod{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+.delete-depl{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 60px;
+}
+
+.element{
+   
+    border: 4px solid #000000;
+    color: #000000;
+    font-weight:bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    box-shadow: 4px 2px 5px 1px #991cff;
+    border-radius:10px;
+    background-color:rgb(85, 255, 141);
+    display: inline-block;
+    font-size: 16px;
+    margin:4px 2px;
+    transition-duration:0.4s;
+    cursor:pointer;
+  }
+
