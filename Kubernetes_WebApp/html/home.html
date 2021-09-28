@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kubernetes</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="script/main.js"></script>
+   <script src="script/features.js"></script>
+
+</head>
+
+
+<body>
+
+<center>
+ <h2>K8s Portal</h2>
+</center>
+
+<div id="div1">
+<h3>Launch pod</h3>
+ <b>Name: </b> <input type="text" placeholder="Enter pod name" id="pod-launch"><br><br>
+  <b>Image: </b><input type="text" placeholder="Enter image name" id="lau-img">
+        <div class="pod-create">
+            <button style="background-color:deepskyblue;" onclick="lp1()">Create Pod</button>
+            </div>
+</div>
+
+
+<div id="div1">
+<h3>Create Deployment</h3>
+ <b>Name: </b> <input type="text" placeholder="Enter deployment name" id="depl-l"><br><br>
+  <b>Image: </b><input type="text" placeholder="Enter deploy image" id="depl-img">
+        <div class="deploy-create">
+            <button style="background-color:deepskyblue;" onclick="ld1()">Create Deployment</button>
+            </div>
+</div>
+
+
+<div id="div5">
+<h3>Scale Deployment</h3>
+ <b>Name: </b> <input type="text" placeholder="Enter deployment name" id="d-scale"><br><br>
+  <b>Replicas: </b><input type="text" placeholder="Enter numbers" id="scale-num">
+        <div class="deploy-scale">
+            <button style="background-color:deepskyblue;" onclick="dscale()">Replicate</button>
+            </div>
+</div>
+
+<div id="div2">
+<h3>Expose Deployment</h3>
+ <b>Name: </b> <input type="text" placeholder="Enter deployment name" id="exp-name"><br><br>
+  <b>Port: </b><input type="text" placeholder="Enter port number" id="exp-port">
+        <div class="expose-deploy">
+            <button style="background-color:deepskyblue;" onclick="exposeDeploy1()">Expose</button>
+            </div>
+</div>
+
+
+  <p align="center">
+        <button class="element" onclick="listPods();">List Pods</button> &emsp;
+        <button class="element" onclick="delRes();">Delete all resources</button>
+        <button class="element" onclick="listDeploy();">List Deploy</button>
+          <button class="element" onclick="listSvc();">List Services</button>
+    </p>
+
+<center>
+<div id="div3">
+  <b> Your Requirement: </b><input id="box" placeholder="Type your requirement in normal english language">
+  <button onclick="ask()">Click here</button>
+</div>
+  
+ <div id="div4">
+  <b> Enter ur command 👉</b><input id="box1" placeholder="You can run any kubernetes commands">
+  <button onclick="op()">Click here</button>
+</div>
+
+<div style="height:225px;width:580px;overflow:auto;background-color:black;color:white;scrollbar-base-color:gold;font-family:sans-serif;padding:10px; top: 50%; position: absolute; left: 500px;">
+  <h1>Output is here</h1> 
+  <pre>
+        <span id="output"></span>
+        </pre>
+</div>
+
+</center>
+
+</body>
+</html>
