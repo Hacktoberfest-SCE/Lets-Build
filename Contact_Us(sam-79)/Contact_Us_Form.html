@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffa100;
+            padding: 25px;
+            font-size: 50px;
+            color: white;
+        }
+
+        form {
+            background-color: #dedede;
+            padding: 5%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .label {
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 30px;
+            border: 0;
+            box-shadow: 0px 0px 10px #b1b0b0;
+            /* width: 100%; */
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+        }
+
+
+        .element {
+            padding: 10px;
+        }
+
+        .element>label {
+            display: block;
+            margin: 5px 0px;
+        }
+
+        #countryCode {
+            width: 110px;
+        }
+
+        textarea {
+            width: 100%;
+            border: 0;
+            box-shadow: 0px 0px 10px #b1b0b0;
+        }
+
+        .submit-btn {
+            color: white;
+            font-size: 20px;
+            padding: 15px 25px;
+            background: linear-gradient(#fa9f17, #fe6c00);
+            border: solid 1px #db5e00;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>Contact Us</header>
+        <form action="#">
+            <div class="element">
+                <label class="label" for="name">Name<p style="color:rgb(255, 8, 8); display: inline;">* </p></label>
+                <input type="text" name="name" id="name" required />
+            </div>
+
+            <div class="element">
+                <label class="label" for="email">E-mail<p style="color:rgb(255, 8, 8); display: inline;">* </p></label>
+                <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="element">
+                <label class="label" for="mobileNum">Phone Number</label>
+                <input type="number" name="countryCode" id="countryCode" />
+                <sub style="color:#969696bb;display: block;">Country Code</sub>
+                <input type="text" name="mobileNum" id="mobileNum" />
+                <sub style="color:#969696bb;display: block;">Phone Number</sub>
+            </div>
+            <div class="element">
+                <label class="label" for="msg">Message<p style="color:rgb(255, 8, 8); display: inline;">* </p></label>
+                <textarea name="msg" id="msg" rows="5">
+                </textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit" class="submit-btn">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
