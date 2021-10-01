@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <nav>
+       <h1> Check Your BMI</h1>
+    </nav>
+    <h1 id="answer"></h1>
+    <div class="container">
+        <div class="sub">
+            <h2>Age</h2>
+            <input id="age" class="subin" value="18">
+            <div class="PlusAndMinus">
+                <a class="minus" id="ageminus"> - </a>
+                <a class="plus" id="ageplus"> + </a>
+            </div>
+        </div>
+        <div class="sub">
+            <h2>Weight (Kg)</h2>
+            <input id="weight" class="subin" value="54">
+            <div class="PlusAndMinus">
+                <a class="minus" id="weightminus"> - </a>
+                <a class="plus" id="weightplus"> + </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sub sub2">
+            <h2>Height</h2>
+            <input id="feet" type="text" placeholder="feet">
+            <input id="inches" type="text" placeholder="inches">
+            <div class="PlusAndMinus">
+                <a class="calculate" onclick="calculateBmi()"> Calculate</a> 
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
