@@ -3,6 +3,7 @@
 import cgi
 import subprocess
 import time
+import numpy
 
 print("content-type: text/html")
 print()

@@ -28,6 +28,35 @@ const ball = {
     veloY: 5,
     color: "rgb(255, 102, 0)",
 }
+
+var diff = 1;
+
+function removeActiveButtons() {
+    var active = document.getElementsByClassName("active")[0]
+    active.classList.remove("active")
+}
+
+function easyDiff() {
+    removeActiveButtons();
+    document.getElementById("easyButton").classList.add("active");
+    diff = 1;
+    restBall();
+}
+
+function mediumDiff() {
+    removeActiveButtons();
+    document.getElementById("mediumButton").classList.add("active");
+    diff = 2;
+    restBall();
+}
+
+function hardDiff() {
+    removeActiveButtons();
+    document.getElementById("hardButton").classList.add("active");
+    diff = 3;
+    restBall();
+}
+
 function dreci(x, y, w, h) {
 
     pen.fillRect(x, y, w, h);
@@ -102,12 +131,17 @@ function restBall(){
 function update(){
     ball.x+=ball.veloX;
     ball.y+=ball.veloY;
-    let cl=0.1;
-    com.y+=(ball.y-(com.y+com.height/2))*cl;
-    if(ball.y + ball.radius>canvas.height || ball.y - ball.radius<0){
-        ball.veloY= -ball.veloY;
-        
+    
+    var cl = 0;
+    if (diff == 1) {
+        cl=.08;
+    } else if (diff == 2){
+        cl = .12;
+    } else {
+        cl = .24;
     }
+    com.y+=(ball.y-(com.y+com.height/2))*cl;
+
     let match=(ball.x<canvas.width/2)? player : com;
     if(col(ball,match)){
        let clop=ball.y-(match.y+match.height/2);
