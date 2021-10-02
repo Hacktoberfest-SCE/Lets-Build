@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(255, 27, 27, 0.5);
+}
+
+nav{
+    background-color: rgba(95, 28, 28, 0.5);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10% ;
+    border-bottom-right-radius: 10% ;
+    border-bottom: 1px solid rgba(255, 255, 255, 1.0);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav h1{
+    color: rgb(221, 241, 241);
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.container .sub{
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 1);
+    min-width: 30%;
+    height : auto;
+    margin : auto;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 3%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sub p{
+    font-size: 4rem;
+    margin: 2%;
+}
+
+input{
+    height: 2rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+.PlusAndMinus{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+}
+
+.PlusAndMinus a{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 27, 27, 0.5);
+    cursor: pointer;
+    width: 30%;
+    height: 2rem;
+    margin: auto;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+
+.PlusAndMinus .calculate{
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.PlusAndMinus a:hover{
+    background-color: rgb(150, 226, 226);
+}
+
+.sub2 h2{
+    margin: 1rem;
+}
+
+.sub .subin{
+    border: none;
+    width: 80%;
+    text-align: center;
+    font-size: 3rem;
+    height: auto;
+    font-weight: bold;
+}
+
+
+#answer{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
