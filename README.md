@@ -13,7 +13,7 @@
   <ol> 
 📌 Before Starting <B>Steps to be Noted :</B> 
     <li><B>Our Event : https://www.linkedin.com/events/hacktoberfestsce6848954916837453824/ <B></li>
-      <li><B> Session link https://youtu.be/5X4EB9STV4U <br></li>
+      <li><B> click here for Session link https://youtu.be/5X4EB9STV4U <br></li>
   <li><B> To Register yourself https://hacktoberfest.digitalocean.com/ <br>
     
 
