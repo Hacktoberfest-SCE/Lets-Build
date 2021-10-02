@@ -1,0 +1,221 @@
+.attribution { font-size: 16px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+    background: radial-gradient(circle at 50% 0%, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+.score-container {
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+    margin: 0 auto;
+    top: 5rem;
+    width: 43.75rem;
+    position: relative;
+}
+
+.score-container img {
+    margin: 1.5rem 2rem;
+}
+
+.score-card {
+    position: absolute;
+    display: inline-block;
+    right: 2rem;
+    width: 7rem;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+.score-headline {
+    color: hsl(229, 64%, 46%);
+    font-size: 0.9rem;
+}
+
+.score-text {
+    color: hsl(229, 25%, 31%);
+    font-size: 400%;
+}
+
+.circles{
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 0);
+
+}
+.circles::before{
+    background-image: url("./images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    left: 15%;
+    top: 20%;
+    z-index: -1;
+}
+.icons {
+    margin: 0 25px;
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.icon-rock {
+    background: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    box-shadow: 0px -5px rgba(0, 0, 0, 0.15) inset;
+
+}
+
+.icon-paper {
+    background: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    box-shadow: 0px -5px rgba(0, 0, 0, 0.15) inset;
+}
+
+.icon-scissors {
+    background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    box-shadow: 0px -5px rgba(0, 0, 0, 0.15) inset;
+}
+
+.icons .wrapper {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.15) inset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+}
+.rules-popup{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    top: 7.5rem;
+    display: none;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+
+}
+.flex{
+    display: flex;
+}
+.none{
+    display: none;
+}
+.rules-popup h2{
+    color: hsl(229, 25%, 31%);
+    position: absolute;
+    left: 1rem;
+    top: 0;
+}
+.rules-popup .close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    background-color: #fff;
+    border: none;
+}
+.rules-popup img{
+    position: absolute;
+    top: 25%;
+}
+
+
+/* Items Picked */
+
+.item-picked{
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+.item-picked div{
+    margin: 0 1rem;
+}
+.item-picked div h2{
+    color: #fff;
+    text-align: center;
+}
+.item-picked .icons{
+    margin-bottom: 2rem;
+    width: 250px;
+    height: 250px;
+}
+.item-picked button .wrapper{
+    height: 180px;
+    width: 180px;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.15) inset;
+}
+.house-picked-ico{
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, .3);
+    border: none;
+    margin: 3vh ;
+}
+
+/* PLAY AGAIN BUTTON */
+#play-again{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+}
+#play-again button{
+    height: 50px;
+    width: 220px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9rem;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Rules button */
+
+.rules-btn{
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+}
+.rules-btn button{
+    width: 6rem;
+    height: 2.2rem;
+    border-radius: 9px;
+    background-color:  hsl(237, 49%, 15%);
+    color: #fff;
+}
+
+
+/* .comp-choice{
+    display: none;
+}
+.choices{
+    display: none;
+} */

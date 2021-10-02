@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="">
+
+	<title>Frontend Mentor | Rock, Paper, Scissors</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet"> 
+	<!-- Score
+    Rules
+  
+    You Picked
+    The House Picked
+  
+    You Win
+    You Lose
+  
+    Play Again -->
+
+</head>
+
+<body>
+
+	<!-- score-container -->
+
+	<div class="score-container">
+		<img src="images/logo.svg" alt="logo">
+		<div class="score-card">
+			<span class="score-headline">SCORE</span><br>
+			<span class="score-text">0</span>
+		</div>
+	</div>
+
+	<!-- <h1>Tap to choose!</h1> -->
+
+	<!-- Rock-Paper-Scissor-icons -->
+
+	<div class="circles">
+		<button class="icons icon-paper" data-choice="paper">
+			<span class="wrapper">
+				<img src="./images/icon-paper.svg" alt="paper">
+			</span>
+		</button>
+		<button class="icons icon-scissors" data-choice="scissors">
+			<span class="wrapper">
+				<img src="./images/icon-scissors.svg" alt="scissor">
+			</span>
+		</button>
+		<button class="icons icon-rock" data-choice="rock">
+			<span class="wrapper">
+				<img src="./images/icon-rock.svg" alt="rock">
+			</span>
+		</button>
+	</div>
+
+	<!-- Rules Popup -->
+
+	<div class="rules-popup">
+		<h2>RULES</h2>
+		<img src="/images/image-rules.svg" alt="Rules">
+		<button class="close-btn"><img src="/images/icon-close.svg" alt=""></button>
+	</div>
+
+	<!-- Items Picked -->
+	<div class="item-picked">
+		<div class="choices1 none">
+			<h2>YOU PICKED</h2>
+			<button class="icons" id="icon-paper">
+				<span class="wrapper">
+					<img id="user-choice-img" src="">
+				</span>
+			</button>
+		</div>
+		<div id="play-again" class="none">
+			<h1 id="play-again-text"></h1>
+			<button class="playAgain-btn">PLAY AGAIN</button>
+		</div>
+		<div class="choices2 none">
+			<h2>THE HOUSE PICKED</h2>
+			<button class="house-picked-ico"></button>
+		</div>
+		<div class="comp-choice none">
+			<h2>THE HOUSE PICKED</h2>
+			<button class="icons" id="comp-icon">
+				<span class="wrapper">
+					<img id="comp-choice-img" src="">
+				</span>
+			</button>
+		</div>
+	</div>
+
+	<!-- Rules -->
+
+
+	<div class="rules-btn">
+		<button>RULES</button>
+	</div>
+
+	<!-- <div class="attribution">
+    	Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    	Coded by <a href="https://www.github.com/ikabir21">Ichan Kabir</a>.
+	  </div> -->
+	  <script rel="javascript" src="index.js"></script>
+</body>
+
+</html>
