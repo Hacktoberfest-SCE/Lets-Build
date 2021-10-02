@@ -1,0 +1,21 @@
+.card {
+	margin: 10px 10px;
+	background-color: white;
+	border-radius: 13px;
+	height: 20px;
+	width: 20px;
+	box-shadow: 3px 6px 18px rgb(228, 228, 228);
+	border: rgb(238, 238, 238);
+	text-align: center;
+	justify-content: center;
+	font-size: 26px;
+}
+
+.blue {
+	font-weight: 200;
+}
+
+.red {
+	font-weight: 200;
+        color: red;
+}

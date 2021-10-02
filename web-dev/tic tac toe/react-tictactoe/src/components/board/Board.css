@@ -1,0 +1,17 @@
+.Board {
+	display: flex;
+	flex-wrap: wrap;
+	width: 350px;
+	height: 400px;
+}
+
+@media screen and (min-width: 500px) {
+	.Board {
+		margin: 0px 0px 0px 35%;
+	}
+}
+@media screen and (max-width: 490px) {
+	.Board {
+		margin: 0px 0px 0px 4%;
+	}
+}

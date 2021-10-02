@@ -1,0 +1,19 @@
+.appConatiner {
+	margin-top: 5vh;
+}
+body {
+	/* background: #5c5c5c; */
+	height: 100vh;
+}
+Button {
+	font-size: 1.5rem !important;
+	border: none !important;
+}
+.MuiFilledInput-root,
+.MuiFilledInput-underline,
+.MuiInputBase-root,
+.MuiInputBase-colorResult,
+.MuiInputBase-formControl {
+	color: white !important;
+	font-size: 1.5rem !important;
+}
