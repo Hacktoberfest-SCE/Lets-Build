@@ -1,196 +1,286 @@
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
-:root{
-
+:root {
 }
-#navbar{
-    top: 0px;
-    display:flex ;
-    position: relative;
-    align-items: center;
-    font-family: 'Fredoka One', cursive;
+#navbar {
+  top: 0px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: "Fredoka One", cursive;
 }
-#logo{
-margin: 15px 13px;
+#logo {
+  margin: 15px 13px;
 }
-#logo img{
-    height: 137px;
-    width: 145px;
-    margin: -25px -3px;
+#logo img {
+  height: 137px;
+  width: 145px;
+  margin: -25px -3px;
 }
-#navbar ul{
-    display: flex;
+#navbar ul {
+  display: flex;
 }
-#navbar::before{
-    content: "";
-    background-color: rgb(7, 7, 1);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: .7;
-    top: 0px;
-    left: 0px;
+#navbar::before {
+  content: "";
+  background-color: rgb(7, 7, 1);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  top: 0px;
+  left: 0px;
 }
-#navbar ul li{
-    list-style: none;
-    font-size: 1.3rem;
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
 }
-#navbar ul li a{
-    color: rgb(247, 12, 12);
-    display: block;
-    padding: 3px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-
+#navbar ul li a {
+  color: rgb(247, 12, 12);
+  display: block;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-decoration: none;
 }
-#navbar ul li a:hover{
-    color: rgb(233, 194, 23);
-    background-color: rgb(255, 30, 30);
-
+#navbar ul li a:hover {
+  color: rgb(233, 194, 23);
+  background-color: rgb(255, 30, 30);
 }
-#home{
-    display: flex;
-    height: 557px;
-    flex-direction: column;
-    padding: 3px 60px;
-    justify-content: center;
-    align-items: center;
+#home {
+  display: flex;
+  height: 557px;
+  flex-direction: column;
+  padding: 3px 60px;
+  justify-content: center;
+  align-items: center;
 }
-#home h2{
-    color: rgb(248, 247, 246);
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    
+#home h2 {
+  color: rgb(248, 247, 246);
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
 }
-#home p{
-    font-size: 1.3rem;
-    color: floralwhite;
-    text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-    
+#home p {
+  font-size: 1.3rem;
+  color: floralwhite;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
 }
-.hprim{
-font-size: 3rem;
-padding: 36px;
+.hprim {
+  font-size: 3rem;
+  padding: 36px;
 }
-.btn{
-    padding: 6px 20px;
-    margin: 17px;
-    border: 2px solid rgb(223, 107, 29);
-    background-color: rgb(250, 226, 146);
-    color: rgb(247, 126, 12);
-    font-family: 'Fredoka One', cursive;
-    border-radius: 20px;
-    font-size: 1.2rem;
-
+.btn {
+  padding: 6px 20px;
+  margin: 17px;
+  border: 2px solid rgb(223, 107, 29);
+  background-color: rgb(250, 226, 146);
+  color: rgb(247, 126, 12);
+  font-family: "Fredoka One", cursive;
+  border-radius: 20px;
+  font-size: 1.2rem;
 }
-.btn:hover{
-    cursor: pointer;
-    font-size: 1.4rem;
-    background-color: rgb(247, 126, 12);
-    color:rgb(250, 226, 146) ;
+.btn:hover {
+  cursor: pointer;
+  font-size: 1.4rem;
+  background-color: rgb(247, 126, 12);
+  color: rgb(250, 226, 146);
 }
-.primary{
-    font-size: 3.5rem;
-    padding: 12px;
-    font-family: 'Permanent Marker', cursive;
+.primary {
+  font-size: 3.5rem;
+  padding: 12px;
+  font-family: "Permanent Marker", cursive;
 }
-.secondary{
-    font-size: 2.5rem;
-    padding: 12px;
-    font-family: 'Permanent Marker', cursive;
+.secondary {
+  font-size: 2.5rem;
+  padding: 12px;
+  font-family: "Permanent Marker", cursive;
 }
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
-#service{
-    margin:20px 80px;
-    display: flex;
-    
+#service {
+  margin: 20px 80px;
+  display: flex;
 }
-#service .box{
-   border: 2px solid rgb(223, 107, 29) ;
-   padding: 34px;
-   border-radius: 25px;
-   margin: 2px 8px;
-   background-color: rgb(233, 232, 203);
-   
+#service .box {
+  border: 2px solid rgb(223, 107, 29);
+  padding: 34px;
+  border-radius: 25px;
+  margin: 2px 8px;
+  background-color: rgb(233, 232, 203);
 }
-#service .box img{
-    display: block;
-    margin: auto;
-    height: 200px;
- }
- #client{
-   
- }
-
- .client-item{
-     padding: 24px;
- }
- #clients1{
-    
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- #clients1 img{
-    height: 200x;
- }
- #contact{
-     position: relative;
-    
-    
-    margin: 20px;
- }
- #contact h1{
-     color: rgb(19, 54, 87);
- }
- footer{
-     display: flex;
-     text-align: center;
-     flex-direction: row;
-     justify-content:flex-start;
- }
- footer img{
-     height:200px;
-     width: 200px;
- }
-footer{
-    background: black;
-    color: whitesmoke;
-    padding: 9px 20px;
+#service .box img {
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+#client {
 }
 
-#zoom{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.client-item {
+  padding: 24px;
 }
-#rop{
-    filter: invert(100%);
+#clients1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#convox{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 28px;
+#clients1 img {
+  height: 200x;
 }
-#convox form{
-    width: 40%;
+#contact {
+  position: relative;
+
+  margin: 20px;
 }
-#convox label{
-    font-size: 1.3rem;
+#contact h1 {
+  color: rgb(19, 54, 87);
+}
+footer {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+footer img {
+  height: 200px;
+  width: 200px;
+}
+footer {
+  background: black;
+  color: whitesmoke;
+  padding: 9px 20px;
+}
+
+#zoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rop {
+  filter: invert(100%);
+}
+#convox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 28px;
+}
+#convox form {
+  width: 40%;
+}
+#convox label {
+  font-size: 1.3rem;
 }
 #convox input,
-#convox textarea{
-    width: 100%;
-    padding: .5rem;
-    border-radius: 20px;
-    font-size: 1.1rem;
+#convox textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+
+/* Classes to make Login Modal Work */
+.show-modal {
+  font-size: 1.3rem;
+  font-family: "Fredoka One", cursive;
+  padding: 1.15rem 2.5rem;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  /* font-size: 1rem; */
+  font-family: "Fredoka One", cursive;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.form-control {
+  line-height: 1.5em;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.form-label-group > label {
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  cursor: text;
+  border: 1px solid transparent;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.signin {
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.signin-btn {
+  padding: 5px;
+  cursor: pointer;
 }
