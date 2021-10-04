@@ -1,15 +1,16 @@
 <html>
-<head><title>Dhee WEB</title></head>
+<head><title>Docker</title></head>
 
 <body style="background-color: #7094db">
 
-<center style="color:black; margin:40px;font-size:50px" ><h1>Welcome All !!</h1></center>
+<center style="color:black; margin:40px;font-size:50px" ><h1>Welcome To Docker World</h1></center>
 <b><center style="color:yellow; margin:10px; font-size:40px"> <h1> Integrated Javascript with Docker </h1></center><b>
 <center style = "color:green;font-size:30px;" ><h1>Sign In</h1></center>
 <center style = "color:white;font-size:30px;" ><h1>To get into Docker Applicaion..</h1></center>
 
 <!-- Here we have used POST method to avoid our credentials to visiblw on URL-->
-<form action="http://192.168.43.187/cgi-bin/JS/login.py" method = "POST">
+<!-- Enter the servers ip  -->
+<form action="http://<ip>/cgi-bin/JS/login.py" method = "POST">
 
 <label style="color:blue; margin-left:500px;font-size:40px;" ><b> Enter Username: <b></label><input style= "font-size: 25px " type="text" name="user"/>
 </br>
