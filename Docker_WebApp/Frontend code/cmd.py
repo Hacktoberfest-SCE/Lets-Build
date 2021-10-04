@@ -8,9 +8,9 @@ print("content-type: text/html")
 print()
 
 # FieldStrorage is  a function to take input
-f = cgi.FieldStorage()
-cmd = f.getvalue("x")
+field = cgi.FieldStorage()
+command = field.getvalue("x")
 
 # sudo power bcoz we are runnig docker commands
-output = subprocess.getoutput("sudo " + cmd)
+output = subprocess.getoutput("sudo " + command)
 print(output)
