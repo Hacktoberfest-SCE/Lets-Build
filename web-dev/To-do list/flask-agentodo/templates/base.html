@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename= 'css/style.css') }}"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h1>To Do List</h1>
+    <div class="list">
+      <div class="about">
+        <div class="date-day">
+          <span id="day"></span>
+          <span id="date"></span>
+          </br>
+          <span id="month"></span>
+        </div>
+        <div class="task-info">
+          <div class="number"><span id="number">{{size}}</span><span> Tasks</span></div>
+          <a href="/delete_all" class="clear">CLEAR LIST</a>
+        </div>
+      </div>
+      <form action="/add" method="post" class="form-group">
+        <i class="fa fa-plus"></i>
+        <input
+          type="text"
+          class="task"
+          placeholder="Type your task"
+          name="title"
+        />
+      </form>
+      <div>
+        {% for task in task_list %}
+        <div class="task-element">
+          <input type="checkbox" id={{task.id}} class="list-group-item" name="checkbox" {% if task.checked %} 
+    checked {% endif %}/>
+          <label for="checkbox" class="strikethrough">{{task.title}}</label>
+          
+          <a
+            href="/delete/{{ task.id }}"
+            class="btn btn-danger"
+            ><i class="fa fa-minus-square"></i></a
+          >
+          <span class="time">{{task.time}}</span>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type=text/javascript>
+          $(function() {
+            $('#{{task.id}}').on('click', function(e) {
+              $.post('/toggle/{{ task.id }}',
+                function(data) {
+              }, "json");
+            });
+          });
+        </script>
+        {% endfor %}
+    </div>
+  </body>
+  <script>
+      var currentdate = new Date();
+      var day = "";
+      var month = "";
+      var date = currentdate.getDate();
+      var suffix = "";
+      switch(currentdate.getDay())
+      {
+          case 0:
+            day = "Sunday";
+            break;
+          case 1:
+            day = "Monday";
+            break;
+          case 2:
+            day = "Tuesday";
+            break;
+          case 3:
+            day = "Wednesday";
+            break;
+          case 4:
+            day = "Thursday";
+            break;
+          case 5:
+            day = "Friday";
+            break;
+          case 6:
+            day = "Saturday";
+      }
+      switch(currentdate.getMonth())
+      {
+          case 0: month = "January";
+            break;
+          case 1: month = "February";
+              break;
+          case 2: month = "March";
+              break;
+          case 3: month = "April";
+              break;
+          case 4: month = "May";
+              break;
+          case 5: month = "June"; 
+              break;
+          case 6: month = "July";
+              break;
+          case 7: month = "August";
+              break;
+          case 8: month = "September";
+              break;
+          case 9: month = "October";
+              break;
+          case 10: month = "November";
+              break;
+          case 11: month = "December";
+              break;
+      }
+      var j = date % 10, k = date % 100;
+      if (j == 1 && k != 11) 
+          date = date + "st";
+      else if (j == 2 && k != 12) 
+          date = date + "nd";
+      else if (j == 3 && k != 13) 
+          date = date + "rd";
+      else
+          date = date + "th";
+      document.getElementById("day").innerHTML = day + ", ";
+      document.getElementById("date").innerHTML = date;
+      document.getElementById("month").innerHTML = month;
+    </script>
+</html>

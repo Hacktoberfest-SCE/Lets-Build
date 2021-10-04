@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  background-color: #565ada;
+  width: 95vw;
+}
+
+h1 {
+  color: #f66f70;
+  font-size: 60px;
+  font-weight: 700;
+  margin: auto;
+  text-align: center;
+}
+
+.list {
+  background-color: white;
+  width: 400px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.task {
+  border-radius: 0px;
+  border: 1px solid white;
+  color: #333;
+  outline: none;
+  text-indent: 20px;
+  width: 90%;
+}
+
+.form-group {
+  border: 1px solid #e1eaf1;
+  padding: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.fa {
+  color: #bfbbd5;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  background-color: #fcfcff;
+  padding: 20px;
+}
+
+.date-day {
+  width: 50%;
+}
+
+.task-info {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#number {
+  font-weight: 600;
+}
+
+#day,
+#date {
+  color: #666afb;
+  font-size: 25px;
+}
+
+#day {
+  font-weight: 500;
+}
+
+#month {
+  color: #b3c3e2;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.number {
+  color: #b3c3e2;
+  font-weight: 500;
+  font-size: 17px;
+  font-size: 13px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.task-element {
+  padding: 20px;
+  color: #8e889d;
+  font-size: 20px;
+  width: 100%;
+}
+
+.time {
+  color: #dddce8;
+  font-size: 14px;
+  font-weight: 500;
+  float: right;
+  margin-top: 6px;
+}
+
+.fa-minus-square {
+  color: #f66f70;
+  font-size: 20px;
+  margin-left: 20px;
+  float: right;
+  margin-top: 6px;
+}
+
+.btn {
+  margin-left: 2px;
+}
+
+.fa-plus {
+  font-weight: 200;
+  color: #757575;
+}
+
+.clear {
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #f66f70;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  height: 25px;
+  width: 74px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.list-group-item:checked + label.strikethrough {
+  text-decoration: line-through;
+}
+
+.list-group-item {
+  float: left;
+  margin-top: 5px;
+  margin-right: 20px;
+  height: 20px;
+  width: 16px;
+}
