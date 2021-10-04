@@ -2,8 +2,8 @@
 
 ## Given Template
 
-<img src="./images/design.png" height="500px" width="800px"/>
+<img src="./images/design.png" height="400px" width="600px"/>
 
 ## Submitted Template
 
-<img src="./images/submitted.png" height="500px" width="800px"/>
+<img src="./images/submitted.png" height="400px" width="600px"/>
