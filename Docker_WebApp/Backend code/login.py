@@ -8,8 +8,10 @@ print()
 import cgi
 import subprocess as sp
 
-a = ["dileep-hub"]
-b = ["Dileep@123"]
+# enter user name
+a = ["username"]
+# enter your password
+b = ["password"]
 
 # FieldStorage is a function that will take input from the server
 form = cgi.FieldStorage()
@@ -25,6 +27,6 @@ if(user in a):
 else:
     print("invalid username")
 
-# here final is very imp bcoz only if passd is ryt it redirects orelse not
+# here final is very important because only if password is right it redirects orelse it wont.
 print(final)
 
