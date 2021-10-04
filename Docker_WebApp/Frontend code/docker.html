@@ -12,7 +12,9 @@
 
                 var xhr = new XMLHttpRequest();
                 // here fasle means sync and true means async[AJAX]
-                xhr.open("GET", "http://192.168.43.187/cgi-bin/JS/cmd.py?x=" + i, true);
+		
+		// enter the servers ip with the specified directory
+                xhr.open("GET", "http://<ip>/cgi-bin/JS/cmd.py?x=" + i, true);
                 xhr.send();
 
 		// here  onload will take the return text from server [cgi-bin folder]
