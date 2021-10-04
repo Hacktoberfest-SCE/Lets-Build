@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.form{
+    margin: 20px auto;
+    max-width:40%;  
+}
+
+#form-heading{
+    background-color: #ffa100;
+     
+    padding:20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#ffffff;
+}
+
+#form-body{
+    padding: 25px 30px;
+    background-color: #dedede;
+    color:grey;
+}
+
+#form-body input,textarea{
+    border-radius: 2px 2px 2px 2px;
+    background-color: #f8f8f8;
+    width: 100%;
+    margin:10px 0;
+    border:none;
+    outline: none;
+    padding:5px;
+    box-shadow: 3px 0px 20px 0px #8a8a8a3d;
+}
+
+
+
+#phone-number-field{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.sub-heading{
+color:#afafaf;
+}
+
+.required{
+    color:red;
+}
+
+#submit-btn{
+    background: #fb9111;
+    color:#ffffff;
+    border:1px solid #d85d00;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius: 2px 2px 2px 2px;
+}
