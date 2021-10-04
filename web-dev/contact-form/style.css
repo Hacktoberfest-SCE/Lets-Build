@@ -49,3 +49,12 @@ color:#afafaf;
 .required{
     color:red;
 }
+
+#submit-btn{
+    background: #fb9111;
+    color:#ffffff;
+    border:1px solid #d85d00;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius: 2px 2px 2px 2px;
+}
