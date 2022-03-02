@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Table</title>
+    <style>
+        header {
+            text-align: center;
+            box-shadow: 0px 0px 10px #aaaaaa;
+            padding: 10px;
+            font-size: x-large;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-size: 1rem;
+            width: 90%;
+        }
+
+        thead,
+        tfoot {
+            background-color: #10713a;
+            color: #fff;
+        }
+
+        tbody {
+            background-color: #74ce9b8c;
+        }
+
+
+
+        td,
+        th {
+            border: 1px solid;
+            padding: 5px 10px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .customIn {
+            margin: auto;
+            padding: 20px;
+        }
+
+        .customIn>* {
+            display: block;
+            font-size: x-large;
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body onload="load_table();">
+    <header>
+        ASCII value of Characters
+    </header>
+
+    <section>
+        <div class="customIn">
+            <label for="input">Enter a Character</label>
+            <input type="text" name="input" id="input" oninput="show_value();">
+            <label for="output" id="output"></label>
+            <caption>Note: Only first Character ASCII value is displays.</caption>
+        </div>
+
+        <h1 align='center'>
+            ASCII Table
+        </h1>
+
+        <table id="ascii-table">
+
+            <thead>
+                <tr>
+                    <th scope="col">LETTER</th>
+                    <th scope="col">ASCII VALUE</th>
+                    <th scope="col">BINARY VALUE</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+
+        </table>
+
+
+    </section>
+</body>
+
+<script>
+
+    function convert(value) {
+        let output = "";
+        for (var i = 0; i < value.length; i++) {
+            output += value[i].charCodeAt(0).toString(2) + " ";
+        }
+        return output;
+    }
+
+    function load_table() {
+        const alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const tbody = document.getElementById("table-body");
+
+        // for capital letters
+        for (var i = 0; i < alphabets.length; i++) {
+            let letter = alphabets[i];
+            let asc = letter.charCodeAt(0);
+
+            tbody.innerHTML += `
+            <tr>
+                <th scope="row">${alphabets[i]}</th>
+                <td>${asc}</td>
+                <td>${convert(letter)}</td>
+            </tr>
+            `;
+        }
+
+        // for small letters
+        for (var i = 0; i < alphabets.length; i++) {
+            let letter = alphabets[i].toLowerCase();
+            let asc = letter.charCodeAt(0);
+
+            tbody.innerHTML += `
+            <tr>
+                <th scope="row">${letter}</th>
+                <td>${asc}</td>
+                <td>${convert(letter)}</td>
+            </tr>
+            `;
+        }
+    }
+
+    function show_value(params) {
+        let input = document.getElementById('input').value[0];
+        document.getElementById('output').innerText = `
+        ASCII value of ${input} is ${input.charCodeAt(0)}.
+        Binary value of ${input} is ${convert(input)}.
+
+        `;
+    }
+</script>
+
+</html>
+
+
+
