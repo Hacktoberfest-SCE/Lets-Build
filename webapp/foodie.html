@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Foodie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 1;
+
+        }
+
+        .nav #logo {
+            margin: 10px 50px;
+        }
+
+        .nav #logo h1 a {
+            font-size: 30px;
+            text-decoration: none;
+            margin: 5px 20px;
+            color: white;
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        .nav ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .nav ul li a:hover {
+            color: black;
+            background-color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 4px 200px;
+            height: 100vh;
+            /* width: 100vw; */
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?food') no-repeat center/cover;
+            z-index: -1;
+            opacity: 0.89;
+
+        }
+
+        .services-container {
+            height: 100vh;
+            width: 100%;
+            background: url('https://source.unsplash.com/1600x900/?services');
+        }
+
+        #services {
+            margin: 14px;
+            display: flex;
+            width: fit-content;
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 3px 6px;
+            border-radius: 28px;
+            background-color: rgb(238, 227, 227);
+
+
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        .primary {
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+
+        .secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+
+        #home h1 {
+            text-align: center;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #home p {
+            text-align: center;
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn {
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+            font-size: 1rem;
+            background-color: brown;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn:hover {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: black;
+        }
+
+        .center {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .about-container {
+            height: 100vh;
+            width: 100%;
+            background: url('https://source.unsplash.com/1600x900/?contact') no-repeat center/cover;
+        }
+
+        #about {
+            margin: 14px 200px;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+
+        #about .box {
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid brown; */
+            padding: 34px;
+            margin: 13px 6px;
+            border-radius: 28px;
+            background-color: rgb(250, 253, 253);
+            opacity: 0.8;
+        }
+
+        #about .box .partners {
+            display: flex;
+        }
+
+        #about .box .partners img {
+            height: 100px;
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div id="logo">
+                <h1><a href="#home">Foodie</a></h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 class="primary">Welcome to We foodie website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum ullam adipisci quod voluptatum, dolorum</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="service" class="services-container">
+        <h1 class="primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x900/?food" alt="">
+                <h2 class="secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis, illum eum
+                    possimus facilis deleniti beatae. Eum assumenda dolores quam a perferendis alias rem architecto </p>
+                <button class="btn center">Order Now</button>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x900/?food" alt="">
+                <h2 class="secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis, illum eum
+                    possimus facilis deleniti beatae. Eum assumenda dolores quam a perferendis alias rem architecto </p>
+                <button class="btn center">Order Now</button>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x900/?food" alt="">
+                <h2 class="secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis, illum eum
+                    possimus facilis deleniti beatae. Eum assumenda dolores quam a perferendis alias rem architecto </p>
+                <button class="btn center">Order Now</button>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="aboutus" class="about-container">
+        <h1 class="primary center">About Us</h1>
+        <div id="about">
+            <div class="box">
+                <h2 class="secondary center">We are quality oriented</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis, illum eum
+                    possimus facilis deleniti beatae. Eum assumenda dolores quam a perferendis alias rem architecto
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde officiis at fuga rerum
+                    consequuntur ea, laborum eum harum ducimus quia pariatur voluptate animi nisi porro in, ab quidem et
+                    minus quod hic? </p>
+                <button class="btn">More</button>
+            </div>
+            <div class="box">
+                <h2 class="secondary center">Our Partners</h2>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
